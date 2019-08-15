@@ -1,10 +1,10 @@
 # CakePHP specific files #
 ##########################
 /config/db.php
-#/config/.env
-#/logs/*
-#/tmp/*
-#/vendor/*
+/config/.env
+/logs/*
+/tmp/*
+/vendor/*
 
 # OS generated files #
 ######################
