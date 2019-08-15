@@ -1,0 +1,48 @@
+th.sortable a {
+	position: relative;
+}
+th.sortable a:before,th.sortable a:after {
+	font-family: 'Font Awesome 5 Free';
+	font-weight: 900;
+	font-size: 1rem;
+	position: absolute;
+	opacity: .3;
+	right: -20px;
+	content: '\f0de'
+}
+th.sortable a:after {
+	content: '\f0dd'
+}
+th.sortable a.desc:after {
+	opacity: 1
+}
+th.sortable a.asc:before {
+	opacity: 1
+}
+.fa-times:before {
+	font-family: 'Font Awesome 5 Free';
+	font-size: 8pt;
+	content: '\f00d';
+}
+.badge:empty {
+	display: inline;
+	font-size: 7pt;
+	margin-right: 4px;
+}
+div.form-group.checkboxes > label {
+	margin: 0 1rem 0 0;
+}
+.form-check-inline input {
+	margin: 0 .35rem 0 0;
+}
+@font-face {
+	font-family:'Font Awesome 5 Free';
+	font-style:normal;
+	font-weight:900;
+	src:url(../font/fa5/fa-solid-900.eot);
+	src:url(../font/fa5/fa-solid-900.eot?#iefix) format("embedded-opentype"),
+		url(../font/fa5/fa-solid-900.woff2) format("woff2"),
+		url(../font/fa5/fa-solid-900.woff) format("woff"),
+		url(../font/fa5/fa-solid-900.ttf) format("truetype"),
+		url(../font/fa5/fa-solid-900.svg#fontawesome) format("svg")
+}

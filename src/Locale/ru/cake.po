@@ -1,0 +1,14 @@
+msgid "You are not authorized to access that location."
+msgstr "Для доступа к этому разделу вам необходимо авторизоваться."
+
+msgid "This value is already in use"
+msgstr "Такое значение уже используется"
+
+msgid "This field is required"
+msgstr "Поле обязательно для заполнения"
+
+msgid "This field cannot be left empty"
+msgstr "Поле не может быть пустым"
+
+msgid "The provided value is invalid"
+msgstr "Передано неверное значение"
