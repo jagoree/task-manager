@@ -5,7 +5,7 @@
  */
 ?>
 <div class="col-md-12">
-    <h3><?= __('Editing tag') ?> <?= $tag->caption ?></h3>
+    <h3><?= __('Editing tag') ?> <?= h($tag->caption) ?></h3>
     <?= $this->Form->create($tag, ['templates' => 'form']) ?>
     <div class="form-group">
         <?php

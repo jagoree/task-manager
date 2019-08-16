@@ -60,6 +60,7 @@ class AppController extends Controller
                 'ajaxLogin' => '../Users/login'
             ]);
         }
+        $this->filterInputData();
 
         /*
          * Enable the following component for recommended CakePHP security settings.
@@ -95,6 +96,22 @@ class AppController extends Controller
             }
         } else {
             return $this->redirect($url);
+        }
+    }
+    
+    private function filterInputData()
+    {
+        $request = $this->getRequest();
+        $data = [];
+        if ($request->is(['post', 'put'])) {
+            foreach ($request->getData() as $key => $value) {
+                $data[$key] = $value;
+                if (is_numeric($value) or ! is_scalar($value)) {
+                    continue;
+                }
+                $data[$key] = trim(preg_replace('~\s{2,}~', ' ', preg_replace('~<[a-z0-9/]+>~i', ' ', $value)));
+            }
+            $this->setRequest($request->withParsedBody($data));
         }
     }
 

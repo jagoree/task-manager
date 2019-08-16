@@ -7,7 +7,7 @@
 <div class="col-md-12">
     <?= $this->Form->create($user) ?>
     <div class="form-group">
-        <h3><?= __('Edit User') ?> "<?= $user->name ?>"</h3>
+        <h3><?= __('Edit User') ?> "<?= h($user->name) ?>"</h3>
         <?php
             echo $this->Form->control('name', ['label' => __('Name')]);
             echo $this->Form->control('login', ['label' => __('Login')]);

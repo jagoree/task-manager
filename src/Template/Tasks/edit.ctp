@@ -5,7 +5,7 @@
  */
 ?>
 <div class="col-md-12">
-    <h3><?= __('Editing task') ?> &quot;<?= $task->caption ?>&quot;</h3>
+    <h3><?= __('Editing task') ?> &quot;<?= h($task->caption) ?>&quot;</h3>
     <?= $this->Form->create($task, ['templates' => 'form']) ?>
     <div class="form-group">
         <?php
